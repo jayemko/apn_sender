@@ -92,7 +92,7 @@ end
 require 'resque'
 require 'apn/jobs/sidekiq_notification_job' if defined?(Sidekiq)
 require 'apn/jobs/resque_notification_job' if defined?(Resque)
-rescue LoadError
+
 require "apn/railtie" if defined?(Rails)
 
 require 'apn/backend'
